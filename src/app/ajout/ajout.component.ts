@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
 import { SharedService } from '../shared.service';
 import { FormsModule } from "@angular/forms";
-import { HttpClientModule } from "@angular/common/http";
 
 
 @Component({
   selector: 'app-ajout',
   standalone: true,
-  imports: [FormsModule,HttpClientModule],
+  imports: [FormsModule],
   templateUrl: './ajout.component.html',
   styleUrl: './ajout.component.css'
 })
@@ -16,7 +15,7 @@ export class AjoutComponent {
   hero={
     name: '',
     power: 0,
-    imgUrl: ''
+    image: ''
   }
   // heros: any[]=[];
   ajout=()=>{
@@ -34,7 +33,7 @@ export class AjoutComponent {
             this.hero={
             name: '',
             power: 0,
-            imgUrl: ''
+            image: ''
             }  
         },
         err=>{
@@ -50,7 +49,7 @@ export class AjoutComponent {
     this.hero.power=hPower
   }
   setImg=(hImg:any)=>{
-    this.hero.imgUrl=hImg
+    this.hero.image=hImg
   }
   constructor(public _shared: SharedService){}
 }
