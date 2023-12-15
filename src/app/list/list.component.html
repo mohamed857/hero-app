@@ -1,0 +1,16 @@
+<h1 class="text-center mt-5 text-light"> Hero App</h1>
+<div class="row mt-5">
+    <div class="col-3" *ngFor="let item of _shared.heros">
+        <div [ngClass]="{'card p-1': true , 'bg-success': item.power>100,'bg-danger': item.power<100 && item.power>50}">
+            <div class="card-image">
+                <img class="w-100" [src]="item.imgUrl" alt="">
+            </div>
+
+            <div class="card-body">
+                <h2>{{item.name}}</h2>
+                <p>{{item.power}}</p>
+            </div>
+        </div>    
+    </div>
+
+</div>
