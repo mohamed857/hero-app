@@ -11,7 +11,7 @@ export class SharedService {
   private url = 'http://127.0.0.1:3000/';
   // heros: any[]=[];
   createNewHero=(hero:any)=>{
-    return this.http.post( this.url + 'hero/ajout', hero);
+    return this.http.post( this.url + 'hero/create', hero);
   }
 
   getAllHeros=()=>{

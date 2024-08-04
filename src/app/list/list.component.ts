@@ -35,8 +35,7 @@ deleteHero=(id :any)=>{
       this.ngOnInit();
     },
     err=>{
-      console.error("error",err);
-      
+      console.error("error",err);   
     }
   );
 }

@@ -5,7 +5,7 @@ import { HttpClientModule } from "@angular/common/http";
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterLink,HttpClientModule],
+  imports: [RouterLink],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })

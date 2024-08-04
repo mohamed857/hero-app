@@ -1,12 +1,13 @@
 <div class="row mt-5">
     <div class="col-3">
-        <input [value]="hero.name"  type="text" class="form-control m-1" placeholder="name" #heroName (keyup)="setName(heroName.value)">
+        <input   type="text" class="form-control m-1" placeholder="name"  [(ngModel)]="hero.name">
     </div>
     <div class="col-3">
         <input [value]="hero.power" type="text" class="form-control m-1" placeholder="power" #heroPower (keyup)="setPower(heroPower.value)">
     </div>
     <div class="col-3">
-        <input [value]="hero.image" type="text" class="form-control m-1" placeholder="imgUrl" #heroImg (keyup)="setImg(heroImg.value)">
+        <!-- <input [value]="hero.image" type="text" class="form-control m-1" placeholder="imgUrl" #heroImg (keyup)="setImg(heroImg.value)"> -->
+        <input  type="file" class="form-control m-1" placeholder="imgUrl" #heroImg (change)="selectImage($event)">
     </div>
     <div class="col-3">
         <button class="btn form-control m-1 text-light" (click)="ajout()">create</button>
