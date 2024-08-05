@@ -1,6 +1,10 @@
 # HeroApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.3.
+![image](https://github.com/user-attachments/assets/87ce9bac-5dc1-4cbf-b122-d8a29ee5a28e)
+
+![image](https://github.com/user-attachments/assets/2cd8911c-f84f-4f0f-8e3e-171ee1f22f5f)
+
 
 ## Development server
 
